@@ -1,0 +1,103 @@
+@import 'variables', 'mixins', 'fonts', 'reset';
+
+// btn style (*mixin에서 해도 되고 comm에서 해도 됨)
+
+// card style
+
+// list style
+
+// layout
+.wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header-fix {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+#header {
+    height: $hdH;
+    
+}
+
+#main {
+    // min-height: calc(100vh -$hdH -$ftH);
+    //  > hd, ft의 유무에 따라 다르게 계산해줘야 해서 불편할 수도 있음
+    //  >> .wrap(dsp(flex), flex-dir(column), min-height & .main(fg1)로 설정
+    //      페이지별로 따로 빼주지않아도 되니까 더욱 편리
+    flex-grow: 1;
+}
+
+#footer {
+    height: $ftH;
+    background-color: $gray-100;
+}
+@media screen and (min-width: 1280px) {
+    .inner {
+        padding: 0;
+    }
+}
+
+// header
+#header {
+    background-color: darkgray;
+    .header-fix {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        min-width: 1280px;
+        padding: 0 var(--layout-padding);
+        height: 100%;
+        margin: 0 auto;
+        #logo {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0 0 0;
+            a {
+                display: inline-block;
+                width: 116px;
+                img {
+                    width: 100%;
+                }
+                }
+            
+        }
+        #gnb {
+            padding-top: 20px;
+            .cate-list {
+                display: flex;
+                li {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 15px;
+                }
+            }
+        }
+        .search {
+            position: absolute;
+            right: 66px;
+            top: 48px;
+            ul {
+                display: flex;
+                align-items: center;
+                li {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    padding: 0 10px;
+                }
+            }
+            }
+    }
+}
+
+// footer
+
+// 우선순위 때문에 main, sub는 뒤로 빼줌
+@import 'main', 'sub1';
