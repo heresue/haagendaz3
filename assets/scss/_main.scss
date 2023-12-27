@@ -1,9 +1,49 @@
 .slide-intro {
     width: 100%;
+    height: 625px;
 
     img {
         width: 100%;
         height: 625px;
         filter: brightness(80%);
     }
+}
+
+// ~~~~~best
+// .swiper {
+//     width: 100%;
+//     height: 100%;
+//   }
+
+//   .swiper-slide {
+//     text-align: center;
+//     font-size: 18px;
+//     background: #black;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+
+//   .swiper-slide img {
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//   }
+
+
+.video_wrap {
+  clip-path:  inset(0%);
+  pointer-events: none;
+  position: relative;
+	height: 0;
+	padding-bottom: 56.25%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
