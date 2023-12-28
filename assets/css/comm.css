@@ -405,11 +405,12 @@ legend {
 
 .slide-intro {
   width: 100%;
-  height: 625px;
+  height: 100vh;
 }
 .slide-intro img {
-  width: 100%;
-  height: 625px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   filter: brightness(80%);
 }
 
@@ -427,4 +428,29 @@ legend {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.fp-section {
+  height: 100vh;
+}
+.fp-section .fp-table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.fp-section .fp-tablecell {
+  display: table-cell;
+  vertical-align: top;
+  width: 100%;
+}
+.fp-section .fp-tablecell .src-area {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  max-height: 100vh;
+}
+.fp-section .fp-tablecell .src-area > div {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }/*# sourceMappingURL=comm.css.map */
