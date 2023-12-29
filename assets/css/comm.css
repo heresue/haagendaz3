@@ -408,9 +408,6 @@ legend {
   height: 100vh;
 }
 .slide-intro img {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
   filter: brightness(80%);
 }
 
@@ -430,27 +427,22 @@ legend {
   height: 100%;
 }
 
-.fp-section {
-  height: 100vh;
-}
-.fp-section .fp-table {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-}
-.fp-section .fp-tablecell {
-  display: table-cell;
-  vertical-align: top;
-  width: 100%;
-}
-.fp-section .fp-tablecell .src-area {
+.btm-section .swiper {
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  max-height: 100vh;
 }
-.fp-section .fp-tablecell .src-area > div {
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
+.btm-section .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btm-section .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=comm.css.map */

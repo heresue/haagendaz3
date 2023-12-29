@@ -2,35 +2,11 @@
     width: 100%;
     height: 100vh;
 
+    //★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
     img {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
       filter: brightness(80%);
     }
 }
-
-// ~~~~~best
-// .swiper {
-//     width: 100%;
-//     height: 100%;
-//   }
-
-//   .swiper-slide {
-//     text-align: center;
-//     font-size: 18px;
-//     background: #black;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//   }
-
-//   .swiper-slide img {
-//     display: block;
-//     width: 100%;
-//     height: 100%;
-//     object-fit: cover;
-//   }
 
 
 .video_wrap {
@@ -49,28 +25,25 @@
   }
 }
 
-.fp-section {
-  height: 100vh;
-
-  .fp-table {
-    display: table;
-    table-layout: fixed;
+.btm-section {
+  .swiper {
     width: 100%;
+    height: 100%;
   }
-  .fp-tablecell {
-    display: table-cell;
-    vertical-align: top;
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
     width: 100%;
-    .src-area {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      max-height: 100vh;
-      > div {
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        background-size: cover;
-      }
-    }
+    height: 100%;
+    object-fit: cover;
   }
 }
